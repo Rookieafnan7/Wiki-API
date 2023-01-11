@@ -126,43 +126,6 @@ app.route("/articles/:parameter")
         })
     })
 
-// app.get("/articles",function(req,res){
-//     article.find({},function(err,foundArticles){
-//         if(!err){
-//             res.send(foundArticles);
-//         }else{
-//             res.send(err);
-//         }
-//     })
-//     // res.redirect("/");
-// })
-
-// app.post("/articles",function(req,res){
-//     const postArticle = new article({
-//         title:req.body.title,
-//         content:req.body.content
-//     })
-//     postArticle.save(function(err){
-//         if(!err){
-//             res.send("Worked!");
-//         }else{
-//             console.log(err);
-//         }
-//     });
-    
-// });
-
-// app.delete("/articles",function(req,res){
-//     article.deleteMany({},function(err){
-//         if(!err){
-//             console.log("All articles deleted successfully!");
-//             res.send("Lesgoo!")
-//         }else{
-//             console.log(err);
-//         }
-//     })
-// })
-
 app.listen(3000,function(){
     console.log("Server started at port 3000");
 
